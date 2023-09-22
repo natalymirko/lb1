@@ -5,14 +5,14 @@ b=float(input('Введіть кінець діапазону '))
 h=float(input('Введіть крок розрахунку '))
 n=0
 t=a
-y=[]
-while (t<=b):
-    if t<0:
-       y.append(math.cos(t)*math.cos(t))
+x=[]
+while (x<=b):
+    if x<0:
+       y.append(math.cos(x)*math.cos(x))
     else:
-        y.append(math.sqrt(t*t+1))
+        y.append(math.sqrt(x*x+1))
     n+=1 #kiлькість елементів масиву
-    t+=h
+    x+=h
 # печать
 x=a
 for i in range(0,n):
